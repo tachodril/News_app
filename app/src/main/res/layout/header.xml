@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="160dp"
+    android:layout_marginTop="80dp"
+    android:background="@drawable/drawer_header">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/wait"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer:"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ritik raj,the tachodril"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+</LinearLayout>
