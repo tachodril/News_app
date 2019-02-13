@@ -53,7 +53,8 @@ public class newslist_adapter extends ArrayAdapter<data>
         ImageView img=listitemview.findViewById(R.id.image);
         //set image source using image url and picasso
 
-        Picasso.with(getContext()).load(currentdata.geturl_img()).placeholder(R.drawable.wait).fit().into(img);
+        String imageurl=currentdata.geturl_img();
+        Picasso.with(getContext()).load(imageurl).placeholder(R.drawable.wait).fit().into(img);
 
 
         //next after image set

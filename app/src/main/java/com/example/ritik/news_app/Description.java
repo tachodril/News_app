@@ -38,11 +38,14 @@ public class Description extends AppCompatActivity {
         vimage=findViewById(R.id.image);
         vopen_web=findViewById(R.id.open_web);
         Bundle bundle = getIntent().getExtras();
-        String content_string = bundle.getString("content");
-        String description = bundle.getString("description");
+        String content_string=" ";
+        content_string= bundle.getString("content");
+        String description=" ";
+        description= bundle.getString("description");
         String title = bundle.getString("title");
         String imageurl = bundle.getString("imageurl");
         url = bundle.getString("url");
+        if(content_string.length()>13)
         content_string=content_string.substring(0,content_string.length()-13);
         vcontent.setText(content_string);
         vtitle.setText(title);

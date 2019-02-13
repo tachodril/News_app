@@ -131,8 +131,9 @@ public class technology extends Fragment {
                                 JSONObject currentarticle=array.getJSONObject(i);
                                 JSONObject sources=currentarticle.getJSONObject("source");
                                 String name=sources.getString("name");
-                                String img_url=currentarticle.getString("urlToImage");
-                                String url=currentarticle.getString("url");
+                                String img_url="";
+                                if (currentarticle.has("urlToImage")){
+                                    img_url=currentarticle.getString("urlToImage");}                                String url=currentarticle.getString("url");
                                 String date=currentarticle.getString("publishedAt");
                                 String title=currentarticle.getString("title");
                                 String content=currentarticle.getString("content");
